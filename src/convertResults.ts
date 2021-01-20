@@ -7,8 +7,8 @@ import { patternIdToCodacy } from "./model/patterns"
 
 export function convertResults(report: CLIEngine.LintReport): ToolResult[] {
   const results: ToolResult[] = []
-  report.results.forEach((result) => {
-    const filename = result.filePath
+  report.results.forEach((   result) => {
+        const filename = result.filePath
     const messages = result.messages
     const fatalErrors = messages.filter((m) => m.fatal).map((m) => m.message)
     if (fatalErrors.length > 0) {
