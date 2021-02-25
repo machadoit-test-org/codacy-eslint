@@ -16,6 +16,7 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "simple-import-sort"],
   rules: {
+    "quotes": ["error", "double"],
     "simple-import-sort/imports": "error",
   },
 }
