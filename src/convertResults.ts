@@ -20,9 +20,10 @@ export function convertResults(report: CLIEngine.LintReport): ToolResult[] {
       pairs.forEach(([ruleId, m]) => {
         const line = m.line
         const message = m.message
+        const testIssue = 'test quotes'
         const patternId = patternIdToCodacy(ruleId)
         const suggestion =
-          process.env.SUGGESTIONS === "true" && result.source
+          process.env.SUGGESTIONS === 'true' && result.source
             ? computeSuggestion(
                 result.source,
                 m.line,
