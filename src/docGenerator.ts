@@ -1,11 +1,11 @@
 import {
+  writeFile,
   DescriptionEntry,
   DescriptionParameter,
   Level,
   ParameterSpec,
   PatternSpec,
   Specification,
-  writeFile,
 } from "codacy-seed"
 import { Rule } from "eslint"
 import { JSONSchema4 } from "json-schema"
