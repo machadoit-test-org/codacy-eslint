@@ -22,6 +22,8 @@ at `src/eslintDefaultOptions.ts` to include them on the generated documentation.
     )
     ```
 
+test
+
 4.  Generate documentation so it adds the new plugin documentation
 
 ## Generating documentation
